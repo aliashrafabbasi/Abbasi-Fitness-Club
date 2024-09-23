@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+}
+.vid{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+    
+    /* display: inline; */
+    
+}
+.fitness{
+    position: absolute;
+    align-content: center;
+    /* align-items: center; */
+    /* display: flex; */
+    left: 0;
+    right: 0;
+    top: 0;
+    
+    padding-left: 400x;
+    flex-wrap: nowrap;
+    background: rgba(0,0,0,.7);
+    height: 100%;
+    width: 100%; 
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    /* margin-top: 10px; */
+    font-display:flex  ;
+}
+.fitness h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #fff;
+    animation: animate linear 1s alternate-reverse ;
+    animation-timing-function: linear;animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes  animate{
+    0%{color:rgb(214, 48, 49);}
+    25%{color:rgba(27, 20, 100,1.0));
+   
+    }
+    50%{
+        color:rgba(217, 128, 250,1.0);
+
+
+    }
+    100%{
+        color:white;
+        
+    }
+    
+}
+
+
+.fitness a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    /* margin-top: 140px; */
+    border-radius: 30px;
+    border: solid;
+    padding:3px 100px;
+    border-color: transparent;
+    background-color: rgb(116, 185, 255);
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 250ms;
+    transition-delay: 250ms;
+}
+.fitness a:hover{
+    background-color:rgb(108, 92, 231);
+    color: #fff;
+    font-size: 35px;
+}
